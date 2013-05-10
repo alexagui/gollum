@@ -243,6 +243,9 @@ module Precious
       @content = @page.formatted_data
       @toc_content = wiki.universal_toc ? @page.toc_data : nil
       @mathjax = wiki.mathjax
+      @user_can_delete = wiki.user_can_delete
+      @user_can_create = wiki.user_can_create
+      @user_can_update = wiki.user_can_update
       @h1_title = wiki.h1_title
       @editable = false
       mustache :page
@@ -359,6 +362,9 @@ module Precious
         @content = page.formatted_data
         @toc_content = wiki.universal_toc ? @page.toc_data : nil
         @mathjax = wiki.mathjax
+        @user_can_delete = wiki.user_can_delete
+        @user_can_create = wiki.user_can_create
+        @user_can_update = wiki.user_can_update
         @h1_title = wiki.h1_title
         mustache :page
       elsif file = wiki.file(fullpath)

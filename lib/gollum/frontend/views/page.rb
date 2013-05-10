@@ -82,6 +82,18 @@ module Precious
         !@toc_content.nil?
       end
 
+      def user_can_delete
+        @user_can_delete
+      end
+
+      def user_can_create
+        @user_can_create
+      end
+
+      def user_can_update
+        @user_can_update
+      end
+      
       def toc_content
         @toc_content
       end

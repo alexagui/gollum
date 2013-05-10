@@ -199,6 +199,9 @@ module Gollum
       @live_preview         = options.fetch :live_preview, true
       @universal_toc        = options.fetch :universal_toc, false
       @mathjax              = options.fetch :mathjax, false
+      @user_can_delete      = options.fetch :user_can_delete, false
+      @user_can_create      = options.fetch :user_can_create, false
+      @user_can_update      = options.fetch :user_can_update, false
       @show_all             = options.fetch :show_all, false
       @collapse_tree        = options.fetch :collapse_tree, false
       @css                  = options.fetch :css, false
@@ -619,6 +622,15 @@ module Gollum
     # Toggles mathjax.
     attr_reader :mathjax
 
+    # Toggles user_can_delete.
+    attr_reader :user_can_delete
+
+    # Toggles user_can_create.
+    attr_reader :user_can_create
+
+    # Toggles user_can_update.
+    attr_reader :user_can_update
+    
     # Toggles user icons. Default: 'none'
     attr_reader :user_icons
 
