@@ -9,6 +9,10 @@ module Precious
         @page.title
       end
 
+      def user_should_login_class
+        " should-login" unless @user_can_update
+      end
+
       def versions
         i = @versions.size + 1
         @versions.map do |v|

@@ -716,3 +716,25 @@ ul.actions {
   padding: 0.25em;
 }
 
+#flash_messages .notice, #flash_messages .alert, #flash_messages .success {
+position: relative;
+}
+
+#flash_messages .error, #flash_messages .alert {
+background: #fbe3e4;
+border: 2px solid #fbc2c4 !important;
+color: #8a1f11;
+}
+
+#flash_messages .error, #flash_messages .alert, #flash_messages .notice, #flash_messages .success, #flash_messages .info {
+padding: 0.8em;
+margin: 0 auto 10px;
+border: 2px solid #999;
+border-radius: 5px;
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+}
+
+.alert {
+text-shadow: 0 1px 0 rgba(255,255,255,0.5);
+}

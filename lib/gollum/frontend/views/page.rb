@@ -39,6 +39,10 @@ module Precious
         @editable
       end
 
+      def user_should_login_class
+        " should-login" unless @user_can_update
+      end
+
       def has_header
         @header = (@page.header || false) if @header.nil?
         !!@header

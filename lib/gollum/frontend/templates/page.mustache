@@ -25,11 +25,11 @@ Mousetrap.bind(['e'], function( e ) {
     {{#user_can_update}}
       <li class="minibutton" class="jaws">
         <a href="#" id="minibutton-rename-page">Rename</a></li>
+    {{/user_can_update}}
       {{#editable}}
       <li class="minibutton"><a href="{{base_url}}/edit/{{escaped_url_path}}"
-         class="action-edit-page">Edit</a></li>
+         class="action-edit-page{{user_should_login_class}}">Edit</a></li>
       {{/editable}}
-    {{/user_can_update}}
     <li class="minibutton"><a href="{{base_url}}/history/{{escaped_url_path}}"
        class="action-page-history">History</a></li>
   </ul>

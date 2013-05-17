@@ -7,10 +7,8 @@
     </li>
     <li class="minibutton"><a href="{{base_url}}/{{escaped_url_path}}"
        class="action-view-page">View Page</a></li>
-    {{#page.user_can_update}}
       <li class="minibutton"><a href="{{base_url}}/edit/{{escaped_url_path}}"
-        class="action-edit-page">Edit Page</a></li>
-    {{/page.user_can_update}}
+        class="action-edit-page{{user_should_login_class}}">Edit Page</a></li>
   </ul>
 </div>
 <div id="wiki-history">
